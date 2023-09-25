@@ -13,10 +13,15 @@ import React from "react";
 // }
 
 //Example of Without using JSX
-const Greet = () =>{
-    return React.createElement('div',null,
-    React.createElement('h1',null,"Hello Rohit")
-    )
+// const Greet = () =>{
+//     return React.createElement('div',null,
+//     React.createElement('h1',null,"Hello Rohit")
+//     )
+// }
+
+//use of Props
+const Greet = (props) =>{
+    return <h1>Hello {props.name}</h1>
 }
 
 export default Greet
