@@ -20,8 +20,8 @@ import React from "react";
 // }
 
 //use of Props
-const Greet = (props) =>{
+const Greet = props =>{
     return <h1>Hello {props.name}</h1>
 }
 
-export default Greet
+export default Greet;
