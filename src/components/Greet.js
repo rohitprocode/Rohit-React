@@ -8,9 +8,15 @@ import React from "react";
 // export const Greet = () => <h1>Hello Rohit</h1>
 
 //With Example of JSX
-function Greet(){
-    return <h1>Hello Rohit</h1>
+// function Greet(){
+//     return <h1>Hello Rohit</h1>
+// }
+
+//Example of Without using JSX
+const Greet = () =>{
+    return React.createElement('div',null,
+    React.createElement('h1',null,"Hello Rohit")
+    )
 }
 
 export default Greet
-//Example of Without using JSX
