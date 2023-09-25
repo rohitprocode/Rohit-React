@@ -6,9 +6,9 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-     <Greet name="Mohit"/>
-     <Greet name="Akshay"/> 
-     <Greet name="Hitesh" />
+     <Greet name="Mohit" heroName="Batman"/>
+     <Greet name="Akshay" heroName="Superman"/> 
+     <Greet name="Hitesh" heroName="Wonder Woman"/>
      <Welcome/>
     </div>
   );
