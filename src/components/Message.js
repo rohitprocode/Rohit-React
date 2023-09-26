@@ -4,22 +4,23 @@ class Message extends Component{
     constructor(){
         super()
         this.state = {
-            message : 'Welcome Visitor'
+            message : "Welcome to Rohitzzz"
         }
+    }
+
+    Changeh1(){
+        this.setState({
+            message : "Thankyou for Joining us"
+        })
     }
     render(){
         return (
-            <div>
+        <div>
         <h1>{this.state.message}</h1>
-        <button onClick={()=>this.ontextChange()} >Subscribe</button>
+        <button onClick={()=>this.Changeh1()} >Join our Community</button>
         </div>
         )
-    }  
-    ontextChange(){
-        this.setState({
-            message : "Thankyou for Subscribing"
-        })
     }
-}  
+}
 
 export default Message
