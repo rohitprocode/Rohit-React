@@ -21,14 +21,14 @@ import React, { Children } from "react";
 
 //use of Props
 
-const Greet = props => {
-    // props.name = "Rohit";   props are immutable cannot change its value
-    return (
-        <div>
-            <h1>Hello {props.name} a.k.a {props.heroName}</h1>
-            {props.children}
-        </div>
-    )
-}
+// const Greet = props => {
+//     // props.name = "Rohit";   props are immutable cannot change its valuen
+//     return (
+//         <div>
+//             <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+//             {props.children}
+//         </div>
+//     )
+// }
 
-export default Greet;
+// export default Greet;
