@@ -4,10 +4,12 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter'
+import Student from './components/Student';
 function App() {
   return (
     <div className="App">
-      <Counter count={5} />
+      <Student roll="101" />
+      {/* <Counter count={5} /> */}
      {/* <Greet name="Mohit" heroName="Batman">
       <p>This is Children Prop</p>
      </Greet>
