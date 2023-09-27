@@ -11,8 +11,9 @@ class Student extends Component {
   }
   
   changeText(){
-    this.setState(function(state,props){
-        console.log(state.name + " " + props.roll)
+    this.setState({
+        name : this.state.name = "Mohit",
+        roll : this.state.roll = 105
     })
   }
 
