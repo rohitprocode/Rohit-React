@@ -7,7 +7,7 @@ import Counter from './components/Counter'
 function App() {
   return (
     <div className="App">
-      <Counter><p>This is Children</p></Counter>
+      <Counter count={5} />
      {/* <Greet name="Mohit" heroName="Batman">
       <p>This is Children Prop</p>
      </Greet>
