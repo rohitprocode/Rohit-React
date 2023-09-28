@@ -44,8 +44,18 @@ import React, { Children } from "react";
 //     )
 // }
 
-//Destructure in function parameter
-const Greet = ({name,heroName})=>{
+// //Destructure in function parameter
+// const Greet = ({name,heroName})=>{
+//     return(
+//         <div>
+//             <h1>Hello {name} a.k.a {heroName}</h1>
+//         </div>
+//     )
+// }
+
+//Destructure in function body
+const Greet = (props)=>{
+    const {name,heroName} = props
     return(
         <div>
             <h1>Hello {name} a.k.a {heroName}</h1>
