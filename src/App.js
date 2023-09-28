@@ -6,10 +6,12 @@ import Message from './components/Message';
 import Counter from './components/Counter'
 import Student from './components/Student';
 import Function from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 function App() {
   return (
     <div className="App">
-      <Function/>
+      {/* <Function/> */}
+      <ClassClick/>
       {/* <Student roll="101" /> */}
       {/* <Counter count={5} /> */}
      {/* <Greet name="Mohit" heroName="Batman">
