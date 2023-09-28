@@ -36,13 +36,12 @@ export class Welcome extends Component {
          Value : 855
       }
     }
+    
   render() {
-    const {name,heroName} = this.props
     const {Count , Value} = this.state
     return (
       <div>
-        <h1>Hello {name} a.k.a {heroName}</h1>
-        <h2>Count = {Count} and Value = {Value}</h2>
+        <h1>Count = {Count} and Value = {Value}</h1>
       </div>
     )
   }
