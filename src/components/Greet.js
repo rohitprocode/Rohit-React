@@ -32,3 +32,25 @@ import React, { Children } from "react";
 // }
 
 // export default Greet;
+
+
+//Destructuring - Functional Components
+
+// const Greet = props =>{
+//     return(
+//         <div>
+//             <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+//         </div>
+//     )
+// }
+
+//Destructure in function parameter
+const Greet = ({name,heroName})=>{
+    return(
+        <div>
+            <h1>Hello {name} a.k.a {heroName}</h1>
+        </div>
+    )
+}
+
+export default Greet
