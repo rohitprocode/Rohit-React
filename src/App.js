@@ -5,9 +5,11 @@ import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter'
 import Student from './components/Student';
+import Function from './components/FunctionClick';
 function App() {
   return (
     <div className="App">
+      <Function/>
       {/* <Student roll="101" /> */}
       {/* <Counter count={5} /> */}
      {/* <Greet name="Mohit" heroName="Batman">
@@ -16,7 +18,7 @@ function App() {
      <Greet name="Akshay" heroName="Superman">
   <button>Action</button></Greet> */}
      {/* <Greet name="Hitesh" heroName="Wonder Woman"></Greet> */}
-     <Welcome name="Mohit" heroName="Batman" /> 
+     {/* <Welcome name="Mohit" heroName="Batman" />  */}
      {/* <Welcome name="Akshay" heroName="Superman" />
      <Welcome name="Hitesh" heroName="Wonder Woman" /> */}
     </div>
