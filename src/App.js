@@ -7,11 +7,13 @@ import Counter from './components/Counter'
 import Student from './components/Student';
 import Function from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 function App() {
   return (
     <div className="App">
+      <EventBind/>
       {/* <Function/> */}
-      <ClassClick/>
+      {/* <ClassClick/> */}
       {/* <Student roll="101" /> */}
       {/* <Counter count={5} /> */}
      {/* <Greet name="Mohit" heroName="Batman">
