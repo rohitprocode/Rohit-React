@@ -25,7 +25,30 @@ import React, { Component } from 'react'
 // }
 
 //Binding as Arrow function in render method
+// class EventBind extends Component {
+//     constructor(props) {
+//       super(props)
+    
+//       this.state = {
+//          message : "Hello"
+//       }
+//     }
+//     changeText(){
+//         this.setState({
+//             message : "Bye"
+//         })
+//     }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.message}</h1>
+//         <button onClick={()=>this.changeText()} >Click</button>
+//       </div>
+//     )
+//   }
+// }
 
+//Binding in constructor 
 class EventBind extends Component {
     constructor(props) {
       super(props)
@@ -33,6 +56,8 @@ class EventBind extends Component {
       this.state = {
          message : "Hello"
       }
+
+      this.changeText = this.changeText.bind(this)
     }
     changeText(){
         this.setState({
@@ -43,10 +68,11 @@ class EventBind extends Component {
     return (
       <div>
         <h1>{this.state.message}</h1>
-        <button onClick={()=>this.changeText()} >Click</button>
+        <button onClick={this.changeText} >Click</button>
       </div>
     )
   }
 }
+
 
 export default EventBind
