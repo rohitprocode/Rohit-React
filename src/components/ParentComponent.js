@@ -10,8 +10,8 @@ class ParentComponent extends Component {
     this.greetFunction = this.greetFunction.bind(this)
   }
 
-  greetFunction(){
-    alert (`Rohit ${this.state.message}`)
+  greetFunction(ChildMessage){
+    alert (`Rohit ${this.state.message} : ${ChildMessage} `)
   }
   
   render() {
