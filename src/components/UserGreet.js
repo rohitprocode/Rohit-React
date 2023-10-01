@@ -20,25 +20,49 @@ import React, { Component } from "react";
 //     }
 // }
 
+
+
 //Conditional Rendering : Use of Variable
-class UserGreet extends Component {
-    constructor(props) {
-        super(props)
+// class UserGreet extends Component {
+//     constructor(props) {
+//         super(props)
 
-        this.state = {
-            isLoggedIn: false
+//         this.state = {
+//             isLoggedIn: false
+//         }
+//     }
+
+//     render() {
+//         let Message;
+//         if (this.state.isLoggedIn) {
+//             Message = <div>Hello Rohit</div>
+//         } else {
+//             Message = <div>Hello Guest</div>
+//         }
+
+//         return <div>{Message}</div>
+//     }
+// }
+
+//Conditional Rendering : Use of Ternary Operator
+//Benefit : It can be used in JSX
+
+    class UserGreet extends Component {
+        constructor(props) {
+            super(props)
+    
+            this.state = {
+                isLoggedIn: true
+            }
         }
-    }
-
-    render() {
-        let Message;
-        if (this.state.isLoggedIn) {
-            Message = <div>Hello Rohit</div>
-        } else {
-            Message = <div>Hello Guest</div>
-        }
-
-        return <div>{Message}</div>
+    
+        render() {
+            return (
+                this.state.isLoggedIn ?
+                <div>Hello Rohit</div> :
+                <div>Hello Guest</div>
+            )
     }
 }
+
 export default UserGreet
