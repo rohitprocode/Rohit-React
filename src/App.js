@@ -9,26 +9,26 @@ import Function from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
+import UserGreet from './components/UserGreet'
 
 function App() {
   return (
     <div className="App">
-      <UserGreeting/>
+      <UserGreet/>
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}
       {/* <Function/> */}
       {/* <ClassClick/> */}
       {/* <Student roll="101" /> */}
       {/* <Counter count={5} /> */}
-     {/* <Greet name="Mohit" heroName="Batman">
+      {/* <Greet name="Mohit" heroName="Batman">
       <p>This is Children Prop</p>
      </Greet>
      <Greet name="Akshay" heroName="Superman">
   <button>Action</button></Greet> */}
-     {/* <Greet name="Hitesh" heroName="Wonder Woman"></Greet> */}
-     {/* <Welcome name="Mohit" heroName="Batman" />  */}
-     {/* <Welcome name="Akshay" heroName="Superman" />
+      {/* <Greet name="Hitesh" heroName="Wonder Woman"></Greet> */}
+      {/* <Welcome name="Mohit" heroName="Batman" />  */}
+      {/* <Welcome name="Akshay" heroName="Superman" />
      <Welcome name="Hitesh" heroName="Wonder Woman" /> */}
     </div>
   );
