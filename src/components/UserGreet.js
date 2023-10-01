@@ -44,24 +44,41 @@ import React, { Component } from "react";
 //     }
 // }
 
-//Conditional Rendering : Use of Ternary Operator
-//Benefit : It can be used in JSX
+// Conditional Rendering : Use of Ternary Operator
+// Benefit : It can be used in JSX
 
-    class UserGreet extends Component {
-        constructor(props) {
-            super(props)
-    
-            this.state = {
-                isLoggedIn: true
-            }
+//     class UserGreet extends Component {
+//         constructor(props) {
+//             super(props)
+
+//             this.state = {
+//                 isLoggedIn: true
+//             }
+//         }
+
+//         render() {
+//             return (
+//                 this.state.isLoggedIn ?
+//                 <div>Hello Rohit</div> :
+//                 <div>Hello Guest</div>
+//             )
+//     }
+// }
+
+//Conditional Rendering : Use of short-circuit operator
+//If right hand side condition is true than another code is executed otherwise , nothing will executed
+
+class UserGreet extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            isLoggedIn: true
         }
-    
-        render() {
-            return (
-                this.state.isLoggedIn ?
-                <div>Hello Rohit</div> :
-                <div>Hello Guest</div>
-            )
+    }
+
+    render() {
+        return this.state.isLoggedIn && <div>Hello Rohit</div>
     }
 }
 
