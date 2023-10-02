@@ -15,13 +15,10 @@ import React from 'react'
 
 //With Map method
 
-function NameList(){
-    const names = ['Bruce','Clark','Diana']
-    return(
-        <div>{
-            names.map(name => <h2>{name}</h2>)
-        }</div>
-    )
+function NameList() {
+    const names = ['Bruce', 'Clark', 'Diana']
+    const nameList = names.map(name => <h2>{name}</h2>)
+    return <div>{nameList}</div>
 }
 
 export default NameList
