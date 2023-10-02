@@ -15,10 +15,37 @@ import React from 'react'
 
 //With Map method
 
-function NameList() {
-    const names = ['Bruce', 'Clark', 'Diana']
-    const nameList = names.map(name => <h2>{name}</h2>)
-    return <div>{nameList}</div>
+// function NameList() {
+//     const names = ['Bruce', 'Clark', 'Diana']
+//     const nameList = names.map(name => <h2>{name}</h2>)
+//     return <div>{nameList}</div>
+// }
+
+// Another Example 
+function NameList(){
+const personData = [{
+    id : 1,
+    name : 'Bruce',
+    age : 22,
+    Language : 'React' 
+},
+{
+    id : 2,
+    name : 'Clark',
+    age : 25,
+    Language : 'Python' 
+},
+{
+    id : 3,
+    name : 'Diana',
+    age : 28,
+    Language : 'Vue' 
+}
+];
+
+const PersonList = personData.map(Person =><h2>I am {Person.name}. I am {Person.age} years old. I know {Person.Language}</h2>) 
+
+return <div>{PersonList}</div>
 }
 
 export default NameList
