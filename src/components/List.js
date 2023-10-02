@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person';
 
 //List Rendering
 
@@ -21,7 +22,35 @@ import React from 'react'
 //     return <div>{nameList}</div>
 // }
 
-// Another Example 
+// // Another Example 
+// function NameList(){
+// const personData = [{
+//     id : 1,
+//     name : 'Bruce',
+//     age : 22,
+//     Language : 'React' 
+// },
+// {
+//     id : 2,
+//     name : 'Clark',
+//     age : 25,
+//     Language : 'Python' 
+// },
+// {
+//     id : 3,
+//     name : 'Diana',
+//     age : 28,
+//     Language : 'Vue' 
+// }
+// ];
+
+// const PersonList = personData.map(Person =><h2>I am {Person.name}. I am {Person.age} years old. I know {Person.Language}</h2>) 
+
+// return <div>{PersonList}</div>
+// }
+
+//Refactor
+
 function NameList(){
 const personData = [{
     id : 1,
@@ -43,7 +72,7 @@ const personData = [{
 }
 ];
 
-const PersonList = personData.map(Person =><h2>I am {Person.name}. I am {Person.age} years old. I know {Person.Language}</h2>) 
+const PersonList = personData.map(person => <Person person={person}/> ) 
 
 return <div>{PersonList}</div>
 }
