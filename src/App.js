@@ -11,10 +11,14 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreet from './components/UserGreet'
 import NameList from './components/List';
+import Stylesheet from './components/Stylesheet';
+
+
 function App() {
   return (
     <div className="App">
-      <NameList/>
+      <Stylesheet primary={false} />
+      {/* <NameList/> */}
       {/* <UserGreet/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}
