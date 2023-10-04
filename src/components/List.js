@@ -51,30 +51,37 @@ import Person from './Person';
 
 //Refactor
 
+// function NameList(){
+// const personData = [{
+//     id : 1,
+//     name : 'Bruce',
+//     age : 22,
+//     Language : 'React' 
+// },
+// {
+//     id : 2,
+//     name : 'Clark',
+//     age : 25,
+//     Language : 'Python' 
+// },
+// {
+//     id : 3,
+//     name : 'Diana',
+//     age : 28,
+//     Language : 'Vue' 
+// }
+// ];
+
+// const PersonList = personData.map((person,index) => <Person key={person.age} person={person}/> ) 
+
+// return <div>{PersonList}</div>
+// }
+
 function NameList(){
-const personData = [{
-    id : 1,
-    name : 'Bruce',
-    age : 22,
-    Language : 'React' 
-},
-{
-    id : 2,
-    name : 'Clark',
-    age : 25,
-    Language : 'Python' 
-},
-{
-    id : 3,
-    name : 'Diana',
-    age : 28,
-    Language : 'Vue' 
-}
-];
+    const names = ['Bruce','Clark','Diana']
 
-const PersonList = personData.map((person,index) => <Person key={person.age} person={person}/> ) 
-
-return <div>{PersonList}</div>
+   const namesList = names.map(name => <h2 key={name}>{name}</h2>) 
+   return <div> {namesList} </div>
 }
 
 export default NameList
