@@ -72,7 +72,7 @@ const personData = [{
 }
 ];
 
-const PersonList = personData.map(person => <Person key={person.age} person={person}/> ) 
+const PersonList = personData.map((person,index) => <Person key={index}  person={person}/> ) 
 
 return <div>{PersonList}</div>
 }
