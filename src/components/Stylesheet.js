@@ -13,7 +13,7 @@ function Stylesheet(props){
     let className = props.primary ? "primary" : "Second-Primary"
     return (
         <div>
-            <h1 className={className} >Stylesheet</h1>
+            <h1 className={`${className} fontSize `} >Stylesheet</h1>
         </div>
     )
 }
