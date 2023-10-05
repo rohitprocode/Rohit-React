@@ -6,7 +6,8 @@ class Form extends Component {
     
       this.state = {
          username : "",
-         comments : ""
+         comments : "",
+         Topic : "react"
       }
     }
     
@@ -22,6 +23,12 @@ class Form extends Component {
         })
     }
 
+    handleSelectChange = (event) =>{
+        this.setState({
+            Topic : event.target.value
+        })
+    }
+
   render() {
     return (
         <form>
@@ -32,6 +39,14 @@ class Form extends Component {
         <div>
         <label>Comments</label>
         <input type="text" value={this.state.comments} onChange={this.handleCommentChange} />
+      </div>
+      <div>
+        <label>Topic</label>
+        <select value={this.state.Topic} onChange={this.handleSelectChange} > 
+            <option value="angular">Angular</option>
+            <option value="vue">Vue</option>
+            <option value="react">React</option>
+        </select>
       </div>
       </form>
     )
