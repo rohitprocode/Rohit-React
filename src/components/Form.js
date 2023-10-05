@@ -29,9 +29,13 @@ class Form extends Component {
         })
     }
 
+    handleSubmit = event =>{
+        alert(`${this.state.username} , ${this.state.comments} , ${this.state.Topic}`)
+    }
+
   render() {
     return (
-        <form>
+        <form onSubmit={this.handleSubmit} >
       <div>
         <label>Username</label>
         <input type="text" value={this.state.username}  onChange={this.handleUsernameChange} />
@@ -48,6 +52,7 @@ class Form extends Component {
             <option value="react">React</option>
         </select>
       </div>
+      <button type='submit' >Submit</button>
       </form>
     )
   }
