@@ -1,4 +1,6 @@
+.error{
+    color: red;
+}
 .success{
-    color: darkgreen;
-    
+    color: green;
 }
