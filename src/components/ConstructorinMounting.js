@@ -10,6 +10,12 @@ class ConstructorinMounting extends Component {
         roll : '101'
       }
     }
+
+    static getDerivedStateFromProps(props,state){
+        console.log(props,state);
+        return null
+    }
+
   render() {
     return (
       <div>
