@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import Marks from './Marks'
 
 class StudentGetDSFprop extends Component {
   render() {
+    console.log('Student');
     return (
       <div>
-        <h1>Hello {this.props.name} and {this.props.roll}</h1>
+        <h1>Student</h1>
+        <Marks/>
       </div>
     )
   }
