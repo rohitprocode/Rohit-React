@@ -1,5 +1,5 @@
 import React, { Component, StrictMode } from 'react'
-import StudentGetDSFprop from './GetDSFprop';
+import StudentGetDSFprop from './StudentGetDSFprop';
 
 class ConstructorinMounting extends Component {
     constructor(props) {
