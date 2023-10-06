@@ -19,7 +19,7 @@ import ConstructorinMounting from './components/ConstructorinMounting';
 function App() {
   return (
     <div className="App">
-      <ConstructorinMounting name="Rohit Rathore" />
+      <ConstructorinMounting surname={'Rathore'} />
       {/* <Form /> */}
       {/* <h1 className={styles.error}>Error</h1>
       <h1 className={styles.success}>Success</h1> */}
