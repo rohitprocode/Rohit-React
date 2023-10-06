@@ -16,6 +16,10 @@ class ConstructorinMounting extends Component {
         return null
     }
 
+    componentDidMount(){
+      console.log("ComponentDidMount is Here")
+    }
+
   render() {
     console.log('School')
     return (
