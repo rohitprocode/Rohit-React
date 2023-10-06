@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, StrictMode } from 'react'
 
-export default class ConstructorinMounting extends Component {
+class ConstructorinMounting extends Component {
     constructor(props) {
       super(props)
-      console.log('ConstructorInMounting');
+      console.log('Welcome to ConstructorInMounting');
+      console.log(props.name)
     }
-    
   render() {
     return (
       <div>
@@ -14,3 +14,5 @@ export default class ConstructorinMounting extends Component {
     )
   }
 }
+
+export default ConstructorinMounting
