@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class GetDSFprop extends Component {
+class StudentGetDSFprop extends Component {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class GetDSFprop extends Component {
   }
 }
 
-export default GetDSFprop
+export default StudentGetDSFprop

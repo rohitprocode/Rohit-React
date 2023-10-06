@@ -1,11 +1,11 @@
 import React, { Component, StrictMode } from 'react'
-import GetDSFprop from './GetDSFprop';
+import StudentGetDSFprop from './GetDSFprop';
 
 class ConstructorinMounting extends Component {
     constructor(props) {
       super(props)
       console.log('Welcome to ConstructorInMounting');
-      console.log(props.name)
+      console.log(props.surname)
       this.state={
         roll : '101'
       }
@@ -19,7 +19,7 @@ class ConstructorinMounting extends Component {
   render() {
     return (
       <div>
-        <GetDSFprop name={'Rohit Rathore'} roll={this.state.roll}/>
+        <StudentGetDSFprop name={'Rohit Rathore'} roll={this.state.roll}/>
       </div>
     )
   }
