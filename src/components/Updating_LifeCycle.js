@@ -9,11 +9,19 @@ class getDerivedStateFromProps extends Component {
          Marks : 100
       }
     }
+
+    clickHandler = () =>{
+        this.setState({
+            Marks : 200
+        })
+    }
     
   render() {
+    // console.log(this.state.Marks)
     return (
       <div>
         <Student1 Marks={this.state.Marks}  />
+        <button onClick={this.clickHandler} >Click Here</button>
       </div>
     )
   }

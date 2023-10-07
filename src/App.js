@@ -16,11 +16,13 @@ import Inline from './components/Inline';
 import styles from './appStyles.module.css'
 import Form from './components/Form';
 import ConstructorinMounting from './components/ConstructorinMounting';
+import Updating_LifeCycle from './components/Updating_LifeCycle'
 function App() {
   return (
     <div className="App">
-      <h1>Education</h1>
-      <ConstructorinMounting surname={'Rathore'} />
+      <Updating_LifeCycle/>
+      {/* <h1>Education</h1> */}
+      {/* <ConstructorinMounting surname={'Rathore'} /> */}
       {/* <Form /> */}
       {/* <h1 className={styles.error}>Error</h1>
       <h1 className={styles.success}>Success</h1> */}
