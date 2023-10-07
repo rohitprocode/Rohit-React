@@ -12,10 +12,19 @@ class getDerivedStateFromProps extends Component {
 
     clickHandler = () =>{
         this.setState({
-            Marks : this.state.Marks + 5
+            Marks : this.state.Marks + 2
         })
     }
-    
+
+    shouldComponentUpdate(nextProps,nextState){
+        if(this.state.Marks < 110){
+            // console.log(nextProps , " : " , nextState )
+            return true
+        }
+        // console.log(nextProps, " : " , nextState)
+        return false
+    }
+
   render() {
     // console.log(this.state.Marks)
     return (
