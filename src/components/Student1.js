@@ -12,7 +12,7 @@ class Student1 extends Component {
     static getDerivedStateFromProps(props,state){
         // console.log(props ,state )
         if(props.Marks !== state.NewMarks){
-            // console.log(props ,state )
+            // console.log(props ,state ) 
             return {NewMarks : props.Marks} 
             
         }

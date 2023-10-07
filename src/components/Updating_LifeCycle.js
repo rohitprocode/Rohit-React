@@ -12,7 +12,7 @@ class getDerivedStateFromProps extends Component {
 
     clickHandler = () =>{
         this.setState({
-            Marks : 200
+            Marks : this.state.Marks + 5
         })
     }
     
