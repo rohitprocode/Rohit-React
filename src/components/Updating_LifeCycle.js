@@ -25,6 +25,16 @@ class getDerivedStateFromProps extends Component {
         return false
     }
 
+    getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log("getSnapshotBeforeUpdate")
+        console.log(prevProps,prevState)
+        return 45
+    }
+
+    componentDidUpdate(prevProps,prevState,snapshot){
+        console.log("componentDidUpdate")
+        console.log(prevProps,prevState,snapshot)
+    }
   render() {
     // console.log(this.state.Marks)
     return (
