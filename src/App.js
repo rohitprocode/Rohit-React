@@ -18,10 +18,12 @@ import Form from './components/Form';
 import ConstructorinMounting from './components/ConstructorinMounting';
 import Updating_LifeCycle from './components/Updating_LifeCycle'
 import FragmentsDemo from './components/FragmentsDemo';
+import Table from './components/Table';
 function App() {
   return (
     <div className="App">
-      <FragmentsDemo />
+      <Table />
+      {/* <FragmentsDemo /> */}
       {/* <Updating_LifeCycle/> */}
       {/* <h1>Education</h1> */}
       {/* <ConstructorinMounting surname={'Rathore'} /> */}
