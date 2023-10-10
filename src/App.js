@@ -20,10 +20,12 @@ import Updating_LifeCycle from './components/Updating_LifeCycle'
 import FragmentsDemo from './components/FragmentsDemo';
 import Table from './components/Table';
 import PyorComponent from './components/PureComponent';
+import MemoComponents from './components/MemoComponents';
 function App() {
   return (
     <div className="App">
-      <PyorComponent/>
+      <MemoComponents/>
+      {/* <PyorComponent/> */}
       {/* <Table /> */}
       {/* <FragmentsDemo /> */}
       {/* <Updating_LifeCycle/> */}
