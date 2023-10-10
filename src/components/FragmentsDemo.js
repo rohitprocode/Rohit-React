@@ -7,5 +7,4 @@ function FragmentsDemo() {
     </div>
   )
 }
-
 export default FragmentsDemo
