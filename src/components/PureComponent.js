@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
-class PureComponent extends Component {
+class PyorComponent extends PureComponent {
     constructor(props) {
       super(props)
     
@@ -14,10 +14,10 @@ class PureComponent extends Component {
     return (
       <div>
         <h1>My Age is : {this.state.age}</h1>
-        <button onClick={()=>this.setState({age : 1})} >Update</button>
+        <button onClick={()=>this.setState({age : this.state.age + 1})} >Update</button>
       </div>
     )
   }
 }
 
-export default PureComponent
+export default PyorComponent

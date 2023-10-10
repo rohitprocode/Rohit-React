@@ -19,12 +19,12 @@ import ConstructorinMounting from './components/ConstructorinMounting';
 import Updating_LifeCycle from './components/Updating_LifeCycle'
 import FragmentsDemo from './components/FragmentsDemo';
 import Table from './components/Table';
-import PureComponent from './components/PureComponent';
+import PyorComponent from './components/PureComponent';
 function App() {
   return (
     <div className="App">
-      <Table />
-      {/* <PureComponent/> */}
+      <PyorComponent/>
+      {/* <Table /> */}
       {/* <FragmentsDemo /> */}
       {/* <Updating_LifeCycle/> */}
       {/* <h1>Education</h1> */}
