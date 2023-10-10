@@ -23,8 +23,8 @@ import PureComponent from './components/PureComponent';
 function App() {
   return (
     <div className="App">
-      {/* <Table /> */}
-      <PureComponent/>
+      <Table />
+      {/* <PureComponent/> */}
       {/* <FragmentsDemo /> */}
       {/* <Updating_LifeCycle/> */}
       {/* <h1>Education</h1> */}
