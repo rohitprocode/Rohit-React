@@ -21,10 +21,12 @@ import FragmentsDemo from './components/FragmentsDemo';
 import Table from './components/Table';
 import PyorComponent from './components/PureComponent';
 import MemoComponents from './components/MemoComponents';
+import RefsDemo from './components/RefsDemo';
 function App() {
   return (
     <div className="App">
-      <MemoComponents/>
+      <RefsDemo/>
+      {/* <MemoComponents/> */}
       {/* <PyorComponent/> */}
       {/* <Table /> */}
       {/* <FragmentsDemo /> */}
