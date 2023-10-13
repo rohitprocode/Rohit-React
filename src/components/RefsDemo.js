@@ -1,30 +1,58 @@
+// import React, { Component } from 'react'
+
+// export default class RefsDemo extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.inputField = React.createRef()
+//   }
+
+//   componentDidMount(){
+//     this.inputField.current.focus()
+//   }
+  
+//   render() {
+//     return (
+//       <form>
+//         Name: <input type="text"  ref={this.inputField}/>
+//         <br />
+//         <br />
+//         Password: <input type="text"  />
+//         <br />
+//         <br />
+//         Comments: <input type="text" />
+//       </form>
+//     )
+//   }
+// }
+
 import React, { Component } from 'react'
 
-class RefsDemo extends Component {
+export default class RefsDemo extends Component {
   constructor(props) {
     super(props)
+    this.inputField = React.createRef()
+    this.state={
+      value : ""
+    }
+  }
 
-    this.inputRef = React.createRef()
+  lookAtHere = (e)=>{
+    e.preventDefault();
+    this.setState({
+      value : this.inputField.current.value
+    })
   }
   
-  componentDidMount(){
-    this.inputRef.current.focus()
-    console.log(this.inputRef)
-  }
-
-  handleClick = () =>{
-    alert(this.inputRef.current.value)
-    
-  }
-
   render() {
     return (
-      <div>
-        <input type="text" ref={this.inputRef} />
-        <button onClick={this.handleClick} >Click</button>
-      </div>
+      <>      
+      <h2>{this.state.value}</h2>
+    <form onSubmit={this.lookAtHere} >
+      <input type="text" ref={this.inputField} />
+      <button type='submit' >Submit</button>
+    </form>
+    </>
+
     )
   }
 }
-
-export default RefsDemo
