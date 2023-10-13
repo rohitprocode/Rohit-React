@@ -22,10 +22,12 @@ import Table from './components/Table';
 import PyorComponent from './components/PureComponent';
 import MemoComponents from './components/MemoComponents';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 function App() {
   return (
     <div className="App">
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+      <FocusInput/>
       {/* <MemoComponents/> */}
       {/* <PyorComponent/> */}
       {/* <Table /> */}
