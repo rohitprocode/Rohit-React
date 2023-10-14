@@ -25,12 +25,13 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalinReact from './components/PortalinReact';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <h1>App.js</h1>
-      <PortalinReact/>
+      <ErrorBoundary/>
+      {/* <PortalinReact/> */}
       {/* <FRParentInput/> */}
       {/* <RefsDemo/> */}
       {/* <FocusInput/> */}
