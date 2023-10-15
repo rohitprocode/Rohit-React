@@ -27,11 +27,15 @@ import FRParentInput from './components/FRParentInput';
 import PortalinReact from './components/PortalinReact';
 import ErrorBoundary from './components/ErrorBoundary';
 import Image from './components/Image';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
     <div className="App">
-      <Image/>
+      <ClickCounter/>
+      <HoverCounter/>
+      {/* <Image/> */}
       {/* <ErrorBoundary/> */}
       {/* <PortalinReact/> */}
       {/* <FRParentInput/> */}
