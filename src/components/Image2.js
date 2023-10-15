@@ -7,7 +7,7 @@ class Image2 extends Component {
     }
     return (
       <div>
-        <img src={this.props.pic}/>
+        <img src={this.props.pic} width={200}/>
       </div>
     )
   }
