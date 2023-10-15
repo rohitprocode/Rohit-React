@@ -6,10 +6,11 @@ import Image2 from './Image2'
 class Image1 extends Component{
     render(){
         return(
-            <>
-            <Image2 Pic={logo192}/> <br />
-            <Image2 Pic={logo512}/>
-            </>
+            <div>
+            <Image2 pic={logo192}/> <br />
+            <Image2 pic={logo512}/> <br />
+            <Image2 pic="NoImage"/>
+            </div>
         )
     }
 }
