@@ -29,14 +29,15 @@ import ErrorBoundary from './components/ErrorBoundary';
 import Image from './components/Image';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
-import {HOCRed,HOCGreen,HOCBlue,HigherOrder} from './components/HigherOrder'
+import {HigherOrder,HOCRed,HOCGreen,HOCBlue,HOCOrange,HOCYellow} from './components/HigherOrder';
 function App() {
   return (
     <div className="App">
-      <h1>HOC</h1>
-      <HOCRed cmp={HigherOrder}/>
-      <HOCGreen cmp={HigherOrder}/>
-      <HOCBlue cmp={HigherOrder}/>
+      <HOCRed cmd={HigherOrder}/>
+      <HOCGreen cmd={HigherOrder}/>
+      <HOCBlue cmd={HigherOrder}/>
+      <HOCOrange cmd={HigherOrder}/>
+      <HOCYellow cmd={HigherOrder}/>
       {/* <ClickCounter/> */}
       {/* <HoverCounter/> */}
       {/* <Image/> */}

@@ -1,49 +1,90 @@
 // import React, { Component } from 'react'
 
 // export default class HigherOrder extends Component {
-//     constructor(props) {
-//       super(props)
-    
-//       this.state = {
-//          count: 0
-//       }
-//     }
+//   constructor(props) {
+//     super(props)
 
-//     Count = () =>{
-//         this.setState(preState =>{
-//             return {count : preState.count + 1}
-//         })
+//     this.state = {
+//        count : 0
 //     }
-    
+//   }
+//   count = () =>{
+//     this.setState(prevState =>{
+//       return {count : prevState.count + 1}
+//     })
+//   }
 //   render() {
 //     return (
 //       <div>
-//         <h2>Hey, there i am using whatsapp</h2>
-//         <h3>Count Value = {this.state.count}</h3>
-//         <button onClick={this.Count}>Click Here</button>
+//         <h1>Color Full Calculator</h1>
+//         <h2>{this.state.count}</h2>
+//         <button onClick={this.count}>Click to Add</button>
 //       </div>
 //     )
 //   }
 // }
 
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 
-export function HOCRed(props){
-    return <h2 style={{backgroundColor:'red',width:100}}><props.cmp/></h2>
-}
-export function HOCGreen(props){
-    return <h2 style={{backgroundColor:'Green',width:100}}><props.cmp/></h2>
-}
-export function HOCBlue(props){
-    return <h2 style={{backgroundColor:'Blue',width:100}}><props.cmp/></h2>
-}
-
-export function HigherOrder() {
-    const [count,setCount] = useState(0)
+export function HOCRed(props) {
   return (
     <div>
-      <h2>{count}</h2>
-      <button onClick={()=>setCount(count + 1)} >Click to + 1</button>
+      <h1>Counter</h1>
+      <h2><props.cmd/></h2>
     </div>
   )
+}
+export function HOCGreen(props) {
+  return (
+    <div>
+      <h1>Counter</h1>
+      <h2><props.cmd/></h2>
+    </div>
+  )
+}
+export function HOCBlue(props) {
+  return (
+    <div>
+      <h1>Counter</h1>
+      <h2><props.cmd/></h2>
+    </div>
+  )
+}
+export function HOCOrange(props) {
+  return (
+    <div>
+      <h1>Counter</h1>
+      <h2><props.cmd/></h2>
+    </div>
+  )
+}
+export function HOCYellow(props) {
+  return (
+    <div>
+      <h1>Counter</h1>
+      <h2><props.cmd/></h2>
+    </div>
+  )
+}
+export class HigherOrder extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      count: 0
+    }
+  }
+  newCounter = () =>{
+    this.setState(prevState =>{
+      return {count : prevState.count + 1}
+    })
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.newCounter} >Click to Add</button>
+      </div>
+    )
+  }
 }
