@@ -28,11 +28,11 @@
 
 import React, { useState } from 'react'
 
-function HOC(){
-    return <h2>Red Counter</h2>
+export function HOC(props){
+    return <h2 style={{backgroundColor:'red',width:100}}><props.cmp/></h2>
 }
 
-function HigherOrder() {
+export function HigherOrder() {
     const [count,setCount] = useState(0)
   return (
     <div>
@@ -41,5 +41,3 @@ function HigherOrder() {
     </div>
   )
 }
-
-export default HigherOrder
