@@ -29,40 +29,35 @@ import React, { Component } from 'react'
 export function HOCRed(props) {
   return (
     <div>
-      <h1>Counter</h1>
-      <h2 style={{backgroundColor:'Red'}}><props.cmd/></h2>
+      <h2 style={{backgroundColor:'Red',width:200}}>Click<props.cmd/></h2>
     </div>
   )
 }
 export function HOCGreen(props) {
   return (
     <div>
-      <h1>Counter</h1>
-      <h2 style={{backgroundColor:'green'}}><props.cmd/></h2>
+      <h2 style={{backgroundColor:'green',width:200}}><props.cmd/></h2>
     </div>
   )
 }
 export function HOCBlue(props) {
   return (
     <div>
-      <h1>Counter</h1>
-      <h2 style={{backgroundColor:'blue'}}><props.cmd/></h2>
+      <h2 style={{backgroundColor:'blue',width:200}}><props.cmd/></h2>
     </div>
   )
 }
 export function HOCOrange(props) {
   return (
     <div>
-      <h1>Counter</h1>
-      <h2 style={{backgroundColor:'Orange'}}><props.cmd/></h2>
+      <h2 style={{backgroundColor:'Orange',width:200}}><props.cmd/></h2>
       </div>
   )
 }
 export function HOCYellow(props) {
   return (
     <div>
-      <h1>Counter</h1>
-      <h2 style={{backgroundColor:'Yellow'}}><props.cmd/></h2>
+      <h2 style={{backgroundColor:'Yellow',width:200}}><props.cmd/></h2>
     </div>
   )
 }
