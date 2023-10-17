@@ -28,8 +28,14 @@
 
 import React, { useState } from 'react'
 
-export function HOC(props){
+export function HOCRed(props){
     return <h2 style={{backgroundColor:'red',width:100}}><props.cmp/></h2>
+}
+export function HOCGreen(props){
+    return <h2 style={{backgroundColor:'Green',width:100}}><props.cmp/></h2>
+}
+export function HOCBlue(props){
+    return <h2 style={{backgroundColor:'Blue',width:100}}><props.cmp/></h2>
 }
 
 export function HigherOrder() {
