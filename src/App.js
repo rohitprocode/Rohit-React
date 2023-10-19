@@ -30,14 +30,17 @@ import Image from './components/Image';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import {HigherOrder,HOCRed,HOCGreen,HOCBlue,HOCOrange,HOCYellow} from './components/HigherOrder';
+import Practice01 from './components/Practice01';
 function App() {
   return (
     <div className="App">
-      <HOCRed cmd={HigherOrder}/>
+      <Practice01 Browser={"Google"} size={'500MB'} />
+      <Practice01 Browser={'Twitter'} size={'590MB'}/>
+      {/* <HOCRed cmd={HigherOrder}/>
       <HOCGreen cmd={HigherOrder}/>
       <HOCBlue cmd={HigherOrder}/>
       <HOCOrange cmd={HigherOrder}/>
-      <HOCYellow cmd={HigherOrder}/>
+      <HOCYellow cmd={HigherOrder}/> */}
       {/* <ClickCounter/> */}
       {/* <HoverCounter/> */}
       {/* <Image/> */}
