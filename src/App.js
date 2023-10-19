@@ -34,8 +34,8 @@ import Practice01 from './components/Practice01';
 function App() {
   return (
     <div className="App">
-      <Practice01 Browser={"Google"} size={'500MB'} />
-      <Practice01 Browser={'Twitter'} size={'590MB'}/>
+      <Practice01 Browser={"Google"} size={'500MB'} bgColor={'yellow'} />
+      <Practice01 Browser={'Twitter'} size={'590MB'} bgColor={'pink'}/>
       {/* <HOCRed cmd={HigherOrder}/>
       <HOCGreen cmd={HigherOrder}/>
       <HOCBlue cmd={HigherOrder}/>
