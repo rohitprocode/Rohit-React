@@ -31,11 +31,13 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import {HigherOrder,HOCRed,HOCGreen,HOCBlue,HOCOrange,HOCYellow} from './components/HigherOrder';
 import Practice01 from './components/Practice01';
+import Video from './components/PracticeVideo'
 function App() {
   return (
     <div className="App">
-      <Practice01 Browser={"Google"} size={'500MB'} bgColor={'yellow'} />
-      <Practice01 Browser={'Twitter'} size={'590MB'} bgColor={'pink'}/>
+      {/* <Practice01 Browser={"Google"} size={'500MB'} bgColor={'yellow'} />
+      <Practice01 Browser={'Twitter'} size={'590MB'} bgColor={'pink'}/> */}
+      <Video/>
       {/* <HOCRed cmd={HigherOrder}/>
       <HOCGreen cmd={HigherOrder}/>
       <HOCBlue cmd={HigherOrder}/>
